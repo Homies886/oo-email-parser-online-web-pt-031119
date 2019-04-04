@@ -13,7 +13,7 @@ class EmailParser
   
   def parse
     parsed = @email.split(" ")
-    parsed.map { |p| p.chomp(",")}
+    parsed.map { |p| p.chomp(",")}.uniq
   end
   
 end
