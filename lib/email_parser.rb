@@ -12,8 +12,8 @@ class EmailParser
   end
   
   def parse
-    parsed = @email.split(", ").uniq
-    
+    parsed = @email.split(" ")
+    parsed.map { |p| p.chomp(",")}
   end
   
 end
